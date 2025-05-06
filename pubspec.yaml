@@ -1,0 +1,156 @@
+# The name of the Flutter project.
+name: flutter_bloc_base_structure
+
+# A brief description of the project.
+description: "Flutter bloc base project structure"
+
+# Prevents the package from being published to pub.dev.
+publish_to: 'none'
+
+# The current version of the project.
+version: 1.0.0+1
+
+# Specifies the Dart SDK version required for the project.
+environment:
+  sdk: ^3.7.2
+
+
+dependency_overrides:
+  # Internationalization and localization support.
+  intl: ^0.20.2
+
+
+# Lists the dependencies required for the project.
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Provides Flutter's localization and internationalization support.
+  flutter_localizations:
+    sdk: flutter
+
+
+  # A powerful HTTP client for Dart.
+  dio: ^5.8.0+1
+
+  # bloc: A predictable state management library for Dart and Flutter.
+  bloc: ^9.0.0
+
+  # flutter_bloc: Integrates the bloc state management library with Flutter widgets.
+  flutter_bloc: ^9.1.0
+
+  # go_router: A declarative routing package for Flutter that simplifies navigation and deep linking.
+  go_router: ^14.8.1
+
+  # A simple logging utility for Dart.
+  logger: ^2.5.0
+
+  # Provides annotations for JSON serialization.
+  json_annotation: ^4.9.0
+
+  # A collection of loading animations for Flutter.
+  flutter_spinkit: ^5.2.1
+
+  # Internationalization and localization support.
+  intl: ^0.20.2
+
+  # Simplifies equality comparisons in Dart.
+  equatable: ^2.0.7
+
+  # A simple dependency injection tool for managing service instances.
+  get_it: ^8.0.3
+
+  # A Flutter package for displaying customizable toast notifications.
+  toastification: ^3.0.2
+
+  # vector_graphics: A package for rendering vector graphics in Flutter.
+  vector_graphics: ^1.1.18
+
+  # flutter_svg: A Flutter package for rendering SVG images.
+  flutter_svg: ^2.0.17
+
+  # A Flutter plugin for discovering network connectivity and handling changes in network state.
+  connectivity_plus: ^6.1.3
+
+  # A Flutter package for adapting screen and font sizesdynamically based on different screen dimensions.
+  flutter_screenutil: ^5.9.3
+
+# Lists the development dependencies required for the project.
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Lint rules for Flutter projects.
+  flutter_lints: ^5.0.0
+
+  # A tool to change the app package name.
+  change_app_package_name: ^1.5.0
+
+  # A code generation tool for Dart.
+  build_runner: ^2.4.15
+
+  # Generates code for Flutter assets.
+  flutter_gen_runner: ^5.10.0
+
+# Configuration for the flutter_gen package.
+flutter_gen:
+  integrations:
+    # Enables support for SVG assets.
+    flutter_svg: true
+  colors:
+    inputs:
+      # Specifies the path to the colors XML file.
+      - res/colors/colors.xml
+
+# Flutter-specific configurations.
+flutter:
+
+  # Enables the use of Material Design widgets.
+  uses-material-design: true
+
+  # Specifies the paths to res directories.
+  assets:
+    - res/images/png/
+    - res/images/svg/
+
+    # Specifies the custom fonts used in the project.
+  fonts:
+    - family: Montserrat
+      fonts:
+        - asset: res/fonts/Montserrat/Montserrat-ExtraLight.ttf
+          weight: 100
+        - asset: res/fonts/Montserrat/Montserrat-Thin.ttf
+          weight: 200
+        - asset: res/fonts/Montserrat/Montserrat-Light.ttf
+          weight: 300
+        - asset: res/fonts/Montserrat/Montserrat-Regular.ttf
+          weight: 400
+        - asset: res/fonts/Montserrat/Montserrat-Medium.ttf
+          weight: 500
+        - asset: res/fonts/Montserrat/Montserrat-SemiBold.ttf
+          weight: 600
+        - asset: res/fonts/Montserrat/Montserrat-Bold.ttf
+          weight: 700
+        - asset: res/fonts/Montserrat/Montserrat-ExtraBold.ttf
+          weight: 800
+        - asset: res/fonts/Montserrat/Montserrat-Black.ttf
+          weight: 900
+
+    - family: MuktaVaani
+      fonts:
+        - asset: res/fonts/MuktaVaani/MuktaVaani-ExtraLight.ttf
+          weight: 200
+        - asset: res/fonts/MuktaVaani/MuktaVaani-Light.ttf
+          weight: 300
+        - asset: res/fonts/MuktaVaani/MuktaVaani-Regular.ttf
+          weight: 400
+        - asset: res/fonts/MuktaVaani/MuktaVaani-Medium.ttf
+          weight: 500
+        - asset: res/fonts/MuktaVaani/MuktaVaani-SemiBold.ttf
+          weight: 600
+        - asset: res/fonts/MuktaVaani/MuktaVaani-Bold.ttf
+          weight: 700
+        - asset: res/fonts/MuktaVaani/MuktaVaani-ExtraBold.ttf
+          weight: 800
+flutter_intl:
+  enabled: true
